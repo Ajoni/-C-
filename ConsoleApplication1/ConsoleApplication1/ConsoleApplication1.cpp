@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <Windows.h>
+#include <ctime>
 
 using namespace std;
 
@@ -31,6 +32,7 @@ void destroy(node **head)
 		delete tmp;
 	}
 	delete *head;
+	*head = NULL;
 }
 
 void push(node **head, int n)
@@ -73,27 +75,24 @@ bool full(node *head, int size)
 	else return false;
 }
 
+
 int main()
 {
+	srand(time(NULL));
 	int size,i;
 	node *head;
 
-	cout << "Enter size of stack: " << endl;
-	cin >> size; i = size;
+	size = rand() % 100 + 1;
+	i = size;
 	head = init();
 	head->num = i;
 
 	while (i)
 	{
-		push(&head,i);
+		push(&head,rand()%100+1);
 		i--;
 	}i = size;
 
-	if (full(head,size))
-	{
-		cout << "Stack is full\n";
-	}
-	else cout << "Stack is not full\n";
 
 	while (i)
 	{
@@ -102,11 +101,14 @@ int main()
 		i--;
 	}
 
-	if (full(head,size))
-	{
-		cout << "\nStack is full";
-	}
-	else cout << "\nStack is not full";
+	destroy(&head);
+
+
+	//if (empty(head))
+	//{
+	//	cout << "\nStack is empty";
+	//}
+	//else cout << "\nStack is not empty";
 	Sleep(3000);
 	return 0;
 }

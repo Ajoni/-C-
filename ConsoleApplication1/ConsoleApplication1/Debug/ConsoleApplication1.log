@@ -1,4 +1,5 @@
 ﻿  ConsoleApplication1.cpp
-c:\users\adam5\onedrive\dokumenty\visual studio 2017\projects\consoleapplication1\consoleapplication1\consoleapplication1.cpp(14): warning C4091: "typedef ": zignorowano na lewo od "node" podczas gdy brak deklaracji zmiennej
-  ConsoleApplication1.vcxproj -> C:\Users\adam5\onedrive\dokumenty\visual studio 2017\Projects\ConsoleApplication1\Debug\ConsoleApplication1.exe
-  ConsoleApplication1.vcxproj -> C:\Users\adam5\onedrive\dokumenty\visual studio 2017\Projects\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
+c:\users\adam5\onedrive\dokumenty\visual studio 2017\projects\consoleapplication1\consoleapplication1\consoleapplication1.cpp(15): warning C4091: "typedef ": zignorowano na lewo od "node" podczas gdy brak deklaracji zmiennej
+c:\users\adam5\onedrive\dokumenty\visual studio 2017\projects\consoleapplication1\consoleapplication1\consoleapplication1.cpp(81): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  ConsoleApplication1.vcxproj -> C:\Users\adam5\OneDrive\Dokumenty\Visual Studio 2017\Projects\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\adam5\OneDrive\Dokumenty\Visual Studio 2017\Projects\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
