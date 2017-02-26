@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+c:\users\adam5\onedrive\dokumenty\visual studio 2017\projects\consoleapplication1\consoleapplication1\consoleapplication1.cpp(13): warning C4091: "typedef ": zignorowano na lewo od "node" podczas gdy brak deklaracji zmiennej
+  ConsoleApplication1.vcxproj -> c:\users\adam5\onedrive\dokumenty\visual studio 2017\Projects\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> c:\users\adam5\onedrive\dokumenty\visual studio 2017\Projects\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
