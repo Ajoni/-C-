@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <Windows.h>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ node *init()
 {
 	node *head;
 	head = new node;
+	head->next = NULL;
 	return head;
 }
 
@@ -86,11 +88,25 @@ int main()
 		push(&head,i);
 		i--;
 	}i = size;
+
+	if (full(head,size))
+	{
+		cout << "Stack is full\n";
+	}
+	else cout << "Stack is not full\n";
+
 	while (i)
 	{
-		cout << head->num;
-		head = head->next;
+		cout << top(head)<<", ";
+		pop(&head);
 		i--;
 	}
+
+	if (full(head,size))
+	{
+		cout << "\nStack is full";
+	}
+	else cout << "\nStack is not full";
+	Sleep(3000);
 	return 0;
 }
